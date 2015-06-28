@@ -1,0 +1,49 @@
+# #!/bin/bash
+snippet #!
+	#!/bin/bash
+	
+snippet if
+	if [[ ${1:condition} ]]; then
+		${2:#statements}
+	fi
+snippet elif
+	elif [[ ${1:condition} ]]; then
+		${2:#statements}
+snippet for
+	for (( ${2:i} = 0; $2 < ${1:count}; $2++ )); do
+		${3:#statements}
+	done
+snippet wh
+	while [[ ${1:condition} ]]; do
+		${2:#statements}
+	done
+snippet until
+	until [[ ${1:condition} ]]; do
+		${2:#statements}
+	done
+snippet case
+	case ${1:word} in
+		${2:pattern})
+			${3};;
+	esac
+
+################################################################################
+# l.nyczkowski commandline additional snippets
+################################################################################
+
+# password prompt
+
+# prompt for user P4 password if it was not provided by command line argument (1)
+snippet sh_passwd 
+	${1:PASSWD}=${2:1}
+	if [ -z $$1 ]; then
+		read -s -r -t ${3:15} -p "Please provide password:" $1
+		echo -e "\n"
+		while [ -z $$1 ]
+		do
+			echo -e "ERROR: password cannot be empty. Please repeat!"
+			read -s -r -t $3 $1
+		done
+	fi
+	
+
