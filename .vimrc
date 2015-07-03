@@ -105,5 +105,11 @@ endif
 nnoremap <silent> <F7> :TagbarToggle<CR>
 
 " CTAGS 
-set tags+=/usr/src/tags;/usr/include/tags
+" set tags+=/usr/src/tags;/usr/include/tags
+
+" Folding
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
 
