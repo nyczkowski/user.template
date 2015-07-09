@@ -133,3 +133,14 @@ snippet dprintf
 	#endif
 snippet ife
 	#endif
+# ##############################################################################
+snippet printk
+	#ifndef PRINTK_X 
+	#define PRINTK_X(val)   do {printk (KERN_WARNING""#val" : 0x%08x\n",val);} while(0) 
+	#endif
+	#ifndef PRINTK_D 
+	#define PRINTK_D(val)   do {printk (KERN_WARNING""#val" : %d\n",val);} while(0)
+	#endif
+	#ifndef PRINTK_S 
+	#define PRINTK_S(val)   do {printk (KERN_WARNING""#val" : %s\n",val);} while(0)
+	#endif
