@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/usr/src/linux-headers-3.2.0-4-common'
-let g:netrw_dirhist_2='/usr/src/linux-headers-3.2.0-4-common/include'
-let g:netrw_dirhist_3='/usr/src/linux-headers-3.2.0-4-common/include/linux'
+let g:netrw_dirhist_1='/home/lnyczkowski/Perforce/DEV-GX-ME530TK-l.nyczkowski-debian_8259-DEVEL/MediaSet.Bootloader/thirdparty/src/linux/drivers/brcmstb'
+let g:netrw_dirhist_2='/home/lnyczkowski/Perforce/DEV-GX-ME530TK-l.nyczkowski-debian_8259-DEVEL/MediaSet.Bootloader/src/loader'
+let g:netrw_dirhist_3='/home/lnyczkowski/Perforce/DEV-GX-ME530TK-l.nyczkowski-debian_8259-DEVEL/MediaSet.Bootloader/src/loader/samsung'
