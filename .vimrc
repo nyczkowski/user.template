@@ -41,9 +41,9 @@ set spelllang=en_us
 nnoremap <silent> <S-F5> :set spell ! spell? <CR>
 
 " toggle highligt search result
-set nohlsearch
 set incsearch
-nnoremap <silent> <S-F2> :set hlsearch ! hlsearch? <CR>
+set hlsearch
+" nnoremap <silent> <S-F2> :set hlsearch ! hlsearch? <CR>
 
 " formating
 set ignorecase
