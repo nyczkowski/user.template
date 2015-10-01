@@ -19,6 +19,9 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 " PLUGINS
 " -----------------------------------------------------------------------------
 
+" pre-configure VIMPRJ
+let g:vimprj_changeCurDirIfVimprjFound=0
+
 " pathogen 
 execute pathogen#infect()
 
